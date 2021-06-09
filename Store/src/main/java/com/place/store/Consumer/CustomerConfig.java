@@ -17,10 +17,10 @@ public class CustomerConfig {
   CommandLineRunner commandLineRunner(CustomerRepository repository)
   {
     return args -> {
-      Customer andre = new Customer(
-        "Andre",
-        "Ashmeade",
-        "407 east 33rd Street",
+      Customer kevin = new Customer(
+        "kevin",
+        "Lee",
+        "324 soth 23rd Street",
         LocalDate.of(2001,Month.APRIL,7),
         "America"
         );
@@ -33,7 +33,7 @@ public class CustomerConfig {
           "Japan"
         );
 
-    repository.saveAll(List.of(andre,glenn));
+    repository.saveAll(List.of(kevin,glenn));
 
   };
  }
